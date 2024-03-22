@@ -8,15 +8,14 @@ return {
     },
     config = function()
       require('neo-tree').setup {
-      filesystem = {
-        filtered_items = {
+        filesystem = {
+          filtered_items = {
           visible = true, 
           hide_dotfiles = false,
-          hide_gitignored = true
+          hide_gitignored = true,
         }
       }
     }
-      
-    vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal left<CR>', {})
+      vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', {})
     end
-  }
+}
