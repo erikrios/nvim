@@ -11,3 +11,9 @@ vim.cmd('syntax enable')
 -- Enable file type detection, plugin, and indent
 vim.cmd('filetype plugin indent on')
 
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+})
+
