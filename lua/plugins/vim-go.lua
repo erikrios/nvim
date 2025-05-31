@@ -5,6 +5,7 @@ return {
 			pattern = "go",
 			callback = function()
 				local opts = { buffer = true } -- buffer-local mapping for Go buffers
+				vim.keymap.set("n", "gdg", ":GoDef<CR>", opts)
 				vim.keymap.set("n", "gdp", ":GoDefPop<CR>", opts)
 				vim.keymap.set("n", "gr", ":GoReferrers<CR>", opts)
 				vim.keymap.set("n", "gi", ":GoImplements<CR>", opts)
