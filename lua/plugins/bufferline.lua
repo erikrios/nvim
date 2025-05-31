@@ -2,11 +2,13 @@ return {
 	"akinsho/bufferline.nvim",
 	version = "*",
 	dependencies = "nvim-tree/nvim-web-devicons",
+	event = "VeryLazy",
+	keys = {
+		{ "<S-h>", ":BufferLineCyclePrev<CR>", silent = true, desc = "Move to Previous Buffer" },
+		{ "<S-l>", ":BufferLineCycleNext<CR>", silent = true, desc = "Move to Next Buffer" },
+		{ "<S-x>", ":bdelete<CR>", silent = true, desc = "Close the Current Buffer" },
+	},
 	config = function()
-		vim.opt.termguicolors = true
 		require("bufferline").setup({})
-		vim.keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>", {})
-		vim.keymap.set("n", "<S-l>", ":BufferLineCycleNext<CR>", {})
-		vim.keymap.set("n", "<S-x>", ":bdelete<CR>", {})
 	end,
 }
