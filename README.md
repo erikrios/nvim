@@ -1,28 +1,25 @@
-# DevActivity's dotfiles
+## Neovim setup 
 
-## Neovim setup for Rust
+This configuration uses `Lazy.nvim` as the plugin manager. Please visit the [Lazy.nvim documentation](https://github.com/folke/lazy.nvim) for more information and how it works.
 
-Konfigurasi ini menggunakan `Lazy.nvim` sebagai _plugins manager_. Silahkan kunjungi halaman [dokumentasi Lazy.nvim](https://github.com/folke/lazy.nvim) untuk informasi dan cara kerjanya.
+Additionally, please install the following supporting packages on your OS: `git, fzf, fd, lldb, and ripgrep`. Keep in mind that the package names might differ across Linux distributions, so make sure the package names match those used in your specific Linux distro.
 
-Sebagai tambahan, silahkan install beberapa `package` pendukung berikut ini di sistem OS Anda: `git, fzf, fd, lldb and ripgrep`. Perlu diingat bahwa nama `package` tersebut mungkin berbeda dibeberapa Distro Linux, jadi pastikan nama `package` tersebut sesuai dengan Distro Linux yang Anda gunakan.
+The language server used in this configuration is [neovim-lspconfig](https://github.com/neovim/nvim-lspconfig). You can find more details at that link.
 
-Untuk _language server_ yang digunakan dalam konkfigurasi ini adalah [neovim-lspconfig](https://github.com/neovim/nvim-lspconfig). Detail lebih lanjut dapat Anda lihat melalui link tersebut.
+Use the following commands for plugin-related information:
 
-Gunakan perintah dibawah untuk informasi terkait _plugins_:
+- `:checkhealth lazy` - recommended to run after installation
+- `:Lazy` - to manage plugins
 
-- :checkhealth lazy - recommended to run after installation
-- :Lazy - to manage Plugins
+Key mapping modes:
 
-Dasar mappings:
+- `n`: normal mode only
+- `v`: visual and select modes
+- `o`: operator-pending mode
+- `x`: visual mode only
+- `s`: select mode only
+- `i`: insert mode
+- `c`: command-line mode
+- `l`: insert, command-line, regexp-search ("Lang-Arg" pseudo-mode)
 
-- n: normal only
-- v: visual and select
-- o: operator-pending
-- x: visual only
-- s: select only
-- i: insert
-- c: command-line
-- l: insert, command-line, regexp-search ("Lang-Arg" pseudo-mode)
-
-Koma ( `,` ) adalah `leader`, silahkan tekan koma saat buka Neovim untuk mlihat _shortcut keys_ yang sudah dikonfigurasi.
-
+The comma ( `,` ) is the `leader` key. Press the comma key when opening Neovim to see the shortcut keys that have been configured.
