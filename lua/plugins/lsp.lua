@@ -28,10 +28,10 @@ return {
 					vim.keymap.set("n", keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
 				end
 
-				map("gd", require("telescope.builtin").lsp_definitions, "Goto Definition")
-				map("gr", require("telescope.builtin").lsp_references, "Goto References")
-				map("gi", require("telescope.builtin").lsp_implementations, "Goto Implementation")
-				map("go", require("telescope.builtin").lsp_type_definitions, "Type Definition")
+				-- map("gd", require("telescope.builtin").lsp_definitions, "Goto Definition")
+				-- map("gr", require("telescope.builtin").lsp_references, "Goto References")
+				-- map("gi", require("telescope.builtin").lsp_implementations, "Goto Implementation")
+				-- map("go", require("telescope.builtin").lsp_type_definitions, "Type Definition")
 				map("<leader>p", require("telescope.builtin").lsp_document_symbols, "Document Symbols")
 				map("<leader>P", require("telescope.builtin").lsp_workspace_symbols, "Workspace Symbols")
 				map("<leader>Ps", require("telescope.builtin").lsp_dynamic_workspace_symbols, "Workspace Symbols")
